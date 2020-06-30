@@ -12,18 +12,18 @@ $(document).ready(function(){
     var dots = "" + d + "</ul\>";
     
     $("#slideshow").append(dots).append(buttons);
-    var interval = setInterval(slide, 3000);
+    var interval = setInterval(slide, 4000);
     
     function intslide(func) {
         if (func == 'start') { 
-         interval = setInterval(slide, 3000);
+         interval = setInterval(slide, 000);
         } else {
             clearInterval(interval);		
             }
     }
     
     function slide() {
-            sact('next', 0, 1200);
+            sact('next', 0, 1000);
     }
         
     function sact(a, ix, it) {
